@@ -1,5 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from "./components/App";
+import Navbar from "./components/Navbar";
 
-ReactDOM.render(<App></App>,document.getElementById('root'));
+import {
+    BrowserRouter as Router,
+    Routes,
+    Route,
+  } from "react-router-dom";
+  import Home from "./components/Home";
+  import Analysis from "./components/Analysis";
+    
+
+ReactDOM.render(
+    <React.StrictMode>
+        <Router>
+        <Navbar/>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/analysis" element={<Analysis />} />
+            </Routes>
+        </Router>
+    </React.StrictMode>
+
+,document.getElementById('root'));

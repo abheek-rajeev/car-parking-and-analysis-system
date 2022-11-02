@@ -11,6 +11,7 @@ body{
 .navbar {
   margin: 0;
   overflow: hidden;
+  z-index:2;
   background-color: #000;
   position: fixed;
   top: 0; 
@@ -20,11 +21,13 @@ body{
   justify-content: space-between;
   vertical-align: middle;
 }
-.navbar p{
+.navbar .HomeLink{
+  color: #fff;
+  text-decoration: none;
   font-size: 30px;
   margin: 20px 10px;
 }
-.navbar a{
+.navbar .AnalysisLink{
   color: #fff;
   text-decoration: none;
   font-size: 20px;
@@ -33,10 +36,6 @@ body{
 .main{
   margin-top: 80px;
   margin-left: 20px;
-  /* align-self: center;
-  display: flex;
-  align-items: center;
-justify-content: center; */
 }
 
 .box{
@@ -111,7 +110,7 @@ justify-content: center; */
   }
 }
 @media only screen and (max-width: 475px) {
-  .navbar p{
+  .navbar .HomeLink{
     font-size: 20px;
   }
   .slotCell{

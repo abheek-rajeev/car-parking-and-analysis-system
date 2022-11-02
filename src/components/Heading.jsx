@@ -24,7 +24,6 @@ function Heading(){
                     color="red";
                 }
                 r=r.toFixed(2).toString()+"%";
-                console.log(r);
                 const newList=[];
                 for(var i=0;i<n;i++){
                     if(slots[i]==="0"){
